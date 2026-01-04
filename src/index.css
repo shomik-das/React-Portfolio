@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-coverflow";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-neutral-900 text-neutral-50;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+/* for scrollbar */
+
+body::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+
+/* blinking cursor  */
+.TypeAnimation::after {
+  content: "|";
+  animation: blink 2s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* -- utilities  */
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.text-100 {
+  @apply text-neutral-100;
+}
+
+.text-300 {
+  @apply text-neutral-300;
+}
+
+.text-400 {
+  @apply text-neutral-400;
+}
+
+.t-sm {
+  @apply text-sm;
+}
+.t-lg {
+  @apply text-lg;
+}
+.t-xl {
+  @apply text-xl;
+}
+.t-2xl {
+  @apply text-2xl;
+}
+
+.bg-200 {
+  @apply bg-neutral-200;
+}
+
+.bg-800 {
+  @apply bg-neutral-800;
+}
+
+.bg-900 {
+  @apply bg-neutral-900;
+}
+
+.hover-80 {
+  @apply hover:opacity-80;
+}
+
+.bg-blur-lg {
+  @apply backdrop-blur-[10px];
+}
+
+/* _____________________________ */
+
+.logo {
+  @apply w-10 h-10 flex items-center justify-center;
+}
+
+.navbar {
+  @apply flex items-center gap-2 p-2 bg-[#42424250];
+}
+
+.navlinks {
+  @apply flex items-center gap-1 text-[.9rem] px-4 py-2;
+}
+
+/* app settings component  */
+
+.app-settings {
+  @apply bg-neutral-800 h-[100vh] fixed top-0 right-0 z-20 p-4;
+}
