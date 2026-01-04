@@ -202,7 +202,8 @@ const ProjectDetailsPage = () => {
       >
         <div className="flex gap-3">
           <a
-            href={project.liveDemo}
+            // href={project.liveDemo}
+            href={"#"}
             target="_blank"
             className="flex items-center gap-2 px-4 py-2 text-100 text-sm hover-80"
             style={{ backgroundColor: theme, borderRadius: borderRadius + 'px' }}
@@ -211,7 +212,8 @@ const ProjectDetailsPage = () => {
             Live Demo
           </a>
           <a
-            href={project.githubLink}
+            //href={project.githubLink}
+            href={"#"}
             target="_blank"
             className="flex items-center gap-2 px-4 py-2 text-sm rounded-lg border hover-80"
             style={{ color: theme, borderColor: theme, borderRadius: borderRadius + 'px' }}
